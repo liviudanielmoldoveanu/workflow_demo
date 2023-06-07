@@ -39,3 +39,9 @@
       - run: |
           echo "🚀 Step 5..."
           sleep 10
+  workflow_dispatch:
+    inputs:
+      environment:
+        description: 'Environment to deploy to'
+        type: environment
+        required: true
